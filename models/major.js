@@ -5,11 +5,6 @@ const {
 const student = require('./student');
 module.exports = (sequelize, DataTypes) => {
   class Major extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
     static associate(models) {
       Major.hasMany(models.Student, {sourceKey: 'id', foreignKey: 'majorId', as: 'students'})
     }
@@ -17,7 +12,6 @@ module.exports = (sequelize, DataTypes) => {
   Major.init({
     id: {
       allowNull: false,
-      autoIncrement: true,
       primaryKey: true,
       type: DataTypes.INTEGER,
     },
