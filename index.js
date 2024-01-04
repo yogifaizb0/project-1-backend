@@ -1,15 +1,14 @@
-const express = require('express')
-const router = require('./routers')
+const express = require("express");
+const router = require("./routers");
 
-const app = express()
-const port = 3000
+const app = express();
+const port = process.env.port || 3000;
 
-app.set('view engine', 'ejs')
-app.use(express.urlencoded({extended: false}))
-app.use(express.json())
-app.use('/', router)
-
+app.set("view engine", "ejs");
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use("/", router);
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+  console.log(`Example app listening on port ${port}`);
+});

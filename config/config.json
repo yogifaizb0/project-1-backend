@@ -1,23 +1,26 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "mariano0",
-    "database": "mahasiswa",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "username": "frzgriwd",
+    "password": "WrKDnlXYD_-xsCr6UBWG2AJKslYK01Kt",
+    "database": "frzgriwd",
+    "host": "castor.db.elephantsql.com",
+    "dialect": "postgres",
+    "port": 5432
   },
   "test": {
-    "username": "postgres",
-    "password": "mariano0",
-    "database": "mahasiswa",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "username": "frzgriwd",
+    "password": "WrKDnlXYD_-xsCr6UBWG2AJKslYK01Kt",
+    "database": "frzgriwd",
+    "host": "castor.db.elephantsql.com",
+    "dialect": "postgres",
+    "port": 5432
   },
   "production": {
-    "username": "postgres",
-    "password": "mariano0",
-    "database": "mahasiswa",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "username": "frzgriwd",
+    "password": "WrKDnlXYD_-xsCr6UBWG2AJKslYK01Kt",
+    "database": "frzgriwd",
+    "host": "castor.db.elephantsql.com",
+    "dialect": "postgres",
+    "port": 5432
   }
 }
