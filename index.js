@@ -1,5 +1,17 @@
+require("dotenv").config();
+
 const express = require("express");
 const router = require("./routers");
+const { sequelize } = require("./models/index");
+
+sequelize
+  .authenticate()
+  .then(() => {
+    console.log("Koneksi ke database berhasil.");
+  })
+  .catch((err) => {
+    console.error("Koneksi ke database gagal:", err);
+  });
 
 const app = express();
 const port = process.env.port || 3000;
